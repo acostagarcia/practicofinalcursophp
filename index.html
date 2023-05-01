@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Google fonts Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Scroll suave compatible -Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/smoothScrolling.js"></script>
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>TP Frontend Acosta García -Codo a Codo</title>
+</head>
+
+<body id="page">
+    <header>
+        <!--La barra de navegación-->
+        <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./img/codoacodo.png" alt="Logo" width="100" class="d-inline-block">
+                    <span style="color:white; font-weight: 700;">Conf.Córdoba</span>
+
+
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#inicio">La Conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#oradores">Oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#convierteteorador">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-info" href="https://www.ticketek.com.ar/"
+                                    target="_blank">Comprar tickets</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="inicio"></div>
+        <!--El carrusel-->
+
+        <div id="carouselExampleCaptions" class="carousel slide vh-100 overflow-hidden">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner vh-100 overflow-hidden">
+                <div class="carousel-item active vh-100 overflow-hidden">
+                    <div class="overlay"></div>
+                    <img src="./img/cba1.jpg" class="object-fit-cover" alt="Plaza San Martín">
+                    <div class="row">
+                        <div class="carousel-caption col-lg-4 col-md-10 col-sm-8 col-9">
+                            <p class="h3">Conferencia en Córdoba</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nisi eget elit dictum
+                                egestas. </p>
+                            <button type="button" class="btn btn-outline-light m-1">Más info</button>
+                            <button type="button" class="btn btn-success m-1">Comprar tickets</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item vh-100 overflow-hidden">
+                    <div class="overlay"></div>
+                    <img src="./img/cba2.jpg" class="object-fit-cover" alt="Iglesia de los Capuchinos">
+                    <div class="row">
+                        <div class="carousel-caption col-lg-4 col-md-10 col-sm-8 col-9">
+                            <p class="h3">Los disertantes más destacados</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nisi eget elit dictum
+                                egestas.</p>
+                            <button type="button" class="btn btn-outline-light m-1">Más info</button>
+                            <button type="button" class="btn btn-success m-1">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item vh-100 overflow-hidden">
+                    <div class="overlay"></div>
+                    <img src="./img/cba3.jpg" class="object-fit-cover" alt="Patio Olmos Shopping Center">
+                    <div class="row">
+                        <div class="carousel-caption col-lg-4 col-md-10 col-sm-8 col-9">
+                            <p class="h3">Reservá tus tickets hoy</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nisi eget elit dictum
+                                egestas.</p>
+                            <button type="button" class="btn btn-outline-light m-1">Más info</button>
+                            <button type="button" class="btn btn-success m-1">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </header>
+    <main>
+        <section id="oradores" class="my-5">
+            <div class="text-center">
+                <p>Conoce a los<br>
+                    <span class="h3">Oradores</span>
+                </p>
+
+            </div>
+            <!--Cards-->
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-10 col-lg-3 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                        <img src="./img/steve.jpg" class="card-img-top" alt="Steve jobs">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning my-2">Cintillo 01</span>
+                            <span class="badge text-bg-info my-2">Cintillo 02</span>
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./img/bill.jpg" class="card-img-top" alt="Bill Gates">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning my-2">Cintillo 01</span>
+                            <span class="badge text-bg-info my-2">Cintillo 02</span>
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-lg-3">
+                    <div class="card h-100">
+                        <img src="./img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning my-2">Cintillo 01</span>
+                            <span class="badge text-bg-info my-2">Cintillo 02</span>
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="lugaryfecha">
+
+            <!--card horizontal-->
+            <div class="card text-bg-secondary mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./img/cba4.jpg" class="img-fluid rounded-start" alt="Arco de Córdoba">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body mx-5">
+                            <h3 class="card-title">La ciudad de Córdoba</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dignissim lobortis viverra. Nullam id arcu nec sapien porttitor malesuada. Pellentesque
+                                pretium risus sed sollicitudin suscipit. Pellentesque faucibus enim diam, in porta elit
+                                rutrum sed. Maecenas tempor ligula sit amet blandit efficitur. Quisque id tortor nibh.
+                                Cras malesuada, elit in mollis semper, nulla nulla viverra erat, nec scelerisque eros
+                                neque eget mauris. Nunc pharetra nibh quis ligula porta, sit amet aliquet leo suscipit.
+                            </p>
+
+                            <button type="button" class="btn btn-outline-light m-1">Más info</button>
+                            <button type="button" class="btn btn-primary m-1">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="convierteteorador" class="my-5">
+            <div class="text-center">
+                <p>Conviértete en<br>
+                    <span class="h3">Orador</span>
+                </p>
+            </div>
+            <!--form-->
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-10 col-lg-8 mb-3 mb-sm-0">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Ricardo">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputApellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="inputApellido" placeholder="Acosta García">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="¿Sobre qué quieres hablar?"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success w-100">¡Postularme!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#oradores">Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#convierteteorador">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light" href="https://www.ticketek.com.ar/" target="_blank">Comprar
+                                tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

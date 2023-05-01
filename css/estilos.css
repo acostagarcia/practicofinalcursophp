@@ -1,0 +1,27 @@
+body {
+    font-family: roboto, arial !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.carousel-inner div img {
+    object-fit: cover !important;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    text-align: end !important;
+    top:50%;
+    right: 10%;
+    left: unset;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
